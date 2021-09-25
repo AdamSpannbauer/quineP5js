@@ -5,7 +5,7 @@ Save `sketch.js` contents to a variable.
 
 Saves `sketch.js` to an exported var in a js file.
 The output js file will only contain:
-`export default SKETCH_CODE = '<sketch.js contents>'`
+`export const SKETCH_CODE = '<sketch.js contents>'`
 
 Usage: 
     * Intended to run everytime `sketch.js` is saved
