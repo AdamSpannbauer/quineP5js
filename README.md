@@ -1,7 +1,7 @@
 # A Quine Design in p5js
 
 <p align="center">
-  <img src="exampleOutput.svg" width="75%" />
+  <img src="readme/exampleOutput.svg" width="75%" />
 </p>
 
 From [Wikipedia](<https://en.wikipedia.org/wiki/Quine_(computing)>):
