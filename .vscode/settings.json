@@ -1,0 +1,10 @@
+{
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "sketch.js",
+				"cmd": "./copyFileToVar.py"
+			}
+		]
+	}
+}
