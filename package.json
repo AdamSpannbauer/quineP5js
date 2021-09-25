@@ -1,0 +1,27 @@
+{
+  "name": "quinep5js",
+  "version": "1.0.0",
+  "description": "A program that writes itself... artistically ✨🎨✨",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamSpannbauer/quineP5js.git"
+  },
+  "author": "Adam Spannbauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamSpannbauer/quineP5js/issues"
+  },
+  "homepage": "https://github.com/AdamSpannbauer/quineP5js#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  },
+  "dependencies": {
+    "eslint-config-p5js": "^1.1.0"
+  }
+}
