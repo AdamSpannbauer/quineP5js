@@ -1,13 +1,11 @@
 /* globals SVG */
 import { SKETCH_CODE } from './sketchCodeStr.js';
 import { placeCharacters } from './utils/textUtils.js';
-import { addNoise, testPtInCircle, noisyLine } from './utils/noiseUtils.js';
+import { addNoise, noisyLine, circleMask } from './utils/noiseUtils.js';
 
 const textX = 128;
-const textY = 64;
+const textY = 81;
 const textNoiseSize = 32;
-
-const circleMask = ({ x, y }) => testPtInCircle({ x, y });
 
 const drawNoisyHorizontalLines = ({
   y0 = 0, initialStep = 1, stepGrowth = 1.015, mask = circleMask,

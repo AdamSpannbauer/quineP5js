@@ -2,11 +2,11 @@
 
 /**
  * Add perlin noise to an input point
- * 
+ *
  * @param {Object} options noise inputs and options
  * @param {Number} options.x x position of input point
  * @param {Number} options.y y position of input point
- * @param {Number} options.nScl scale of noise grid for sampling 
+ * @param {Number} options.nScl scale of noise grid for sampling
  *                              (smaller numbers -> smoother; higher numbers -> more eradic)
  * @param {Number} options.nSize size of noise applied to x and y; noise will
  *                               be in range [-nSize, nSize]
@@ -26,14 +26,14 @@ export const addNoise = ({
 
 /**
  * Check if a point is inside of a given circle
- * 
+ *
  * @param {Object} pt {x, y} point to check if in a circle
  * @param {Number} cx circle center's x coord
  * @param {Number} cy circle center's y coord
  * @param {Number} cr circle's radius
  * @returns true if {x, y} lies within circle; otherwise false
  */
-export const testPtInCircle = ({ x, y }, cx = null, cy = null, r = 200) => {
+export const circleMask = ({ x, y }, cx = null, cy = null, r = 200) => {
   cx = cx === null ? width / 2 : cx;
   cy = cy === null ? height / 2 : cy;
 
@@ -43,7 +43,7 @@ export const testPtInCircle = ({ x, y }, cx = null, cy = null, r = 200) => {
 
 /**
  * Draw a line with vertices affected by perlin noise (w/optional masking)
- * 
+ *
  * @param {Number} x1 line start x coord
  * @param {Number} y1 line start y coord
  * @param {Number} x2 line end x coord
@@ -51,7 +51,7 @@ export const testPtInCircle = ({ x, y }, cx = null, cy = null, r = 200) => {
  * @param {Function} maskFunc optional test function to mask vertices
  *                            function must accept {x, y} object as input
  *                            and return truthy if point should be drawn.
- * @param {Number} nScl scale of noise grid for sampling 
+ * @param {Number} nScl scale of noise grid for sampling
  *                              (smaller numbers -> smoother; higher numbers -> more eradic)
  * @param {Number} nSize size of noise applied to x and y; noise will
  *                               be in range [-nSize, nSize]
