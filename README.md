@@ -12,7 +12,7 @@ This project's goal was to have a `sketch.js` file output itself to an html canv
 
 ## How it works
 
-To be upfront, I'm a javascript hobbyist, so I'm lacking some formal training. I'm not sure if I built the best way to do this, or if I jumped through some extra hoops. Regardless, I had fun and was able to learn about a very useful VSCode extension.
+To be upfront, I'm a javascript hobbyist ([my resume](https://docs.google.com/document/d/1Io4LEHVON8k9PaJNFVVoO_5M0CFdDCosaM-xzAp5MEQ/edit?usp=sharing) if you're hiring 👀), so I'm lacking some formal training. I'm not sure if I built the best way to do this, or if I jumped through some extra hoops. Regardless, I had fun and was able to learn about a very useful VSCode extension.
 
 ### Run on Save VSCode extension
 
